@@ -1,9 +1,13 @@
+body {
+  margin: 0 auto;
+}
+
 .container {
   align-items: center;
   justify-content: center;
   text-align: center;
   box-sizing: border-box;
-  margin: 2% 10%;
+  margin: 2% 12%;
   padding: 1% 5%;
 
   border-radius: 25px;
@@ -11,29 +15,72 @@
   box-shadow: 24px 24px 50px #3a3a3a56, -28px -28px 56px #3a3a3a56;
 }
 
+header {
+  width: 100%;
+  background-color: rgb(219, 83, 83);
+  align-items: center;
+  position: static;
+}
+
+#alert {
+  margin: 0 auto;
+}
+
+hr {
+  margin: 5% 0%;
+  height: 1px;
+  border: 0ch;
+  color: #2e014700;
+  background: rgba(66, 66, 66, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgb(138, 138, 138) 50%,
+    rgba(66, 223, 255, 0) 100%
+  );
+}
+
 h1 {
-  font-family: "Work Sans";
+  font-family: "Shadows Into Light";
   font-style: normal;
   font-weight: 700;
-  font-size: 100px;
-  display: inline-block;
+  font-size: 40px;
 }
 
 h2 {
-  text-align: left;
+  text-align: center;
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
-  margin-bottom: 2%;
+  margin: 6% 2%;
+  font-size: 30px;
 }
 
 p {
   font-family: "Work Sans";
   font-style: normal;
-  font-weight: 200;
+  font-weight: 400;
 }
 
-/* First section styling */
+#titleCaption {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+#mainHeading {
+  font-family: "Shadows Into Light";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  display: inline-block;
+  transition: all 1s ease-in-out;
+  animation-name: titleFadeIn;
+  animation-duration: 1s;
+}
+
+/*SECTION 1: Color Pallet */
 
 .colorSection {
   font-family: "Work Sans";
@@ -50,8 +97,18 @@ p {
   line-height: 130px;
   margin-right: 2%;
   border-radius: 100%;
-  opacity: 0.8;
-  transition: 1s;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.colorBox:hover {
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.colorBox:active {
+  transform: scale(1.1);
+  transition: 0.01s ease;
 }
 
 .colorBoxOne {
@@ -83,29 +140,43 @@ p {
 
 .colorBox:hover {
   transition: 0.5s;
-  opacity: 1;
-  box-shadow: 2px 3px 6px rgb(46, 46, 46);
+  opacity: 0.8;
 }
 
-/*Font Section Styling */
+/*SECTION 2: Fonts */
 
 .fontSection {
   width: 100%;
-  height: 500px;
   flex-direction: row;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .fontBox {
-  width: 240px;
-  height: 240px;
+  background-color: #fbfbff;
+  border-radius: 5%;
+  box-shadow: 1px 1px 2px rgb(201, 201, 201);
+  transition: 0.5s ease-in-out;
+  width: 100%;
+  margin: 3px;
+}
+
+.fontBox:hover {
+  box-shadow: 2px 5px 2px rgb(201, 201, 201);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.fontBox:active {
+  transform: scale(1.03);
+  box-shadow: 1px 2px 1px rgb(201, 201, 201);
+  transition: 0.1s ease;
 }
 
 /*First Font */
 
 .fontOne {
-  text-align: left;
+  text-align: center;
 }
 
 .heebo {
@@ -113,6 +184,7 @@ p {
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
+  text-align: center;
 }
 
 #heeboLight {
@@ -136,7 +208,7 @@ p {
 /*Second Font */
 
 .fontTwo {
-  text-align: left;
+  text-align: center;
 }
 
 .workSans {
@@ -167,7 +239,7 @@ p {
 /*Third Font */
 
 .fontThree {
-  text-align: left;
+  text-align: center;
 }
 
 .shadowsIntoLight {
@@ -193,4 +265,12 @@ p {
   font-family: "Shadows Into Light";
   font-style: normal;
   font-weight: 700;
+}
+
+/*SECTION 3: Text Styling */
+
+.stylingSection {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: left;
 }

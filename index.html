@@ -13,15 +13,13 @@
   <body>
     <div class="container">
       <!--title text and a quick introduction-->
-      <header>
-        <h1>Design System</h1>
-        <p>
-          The following is a reference for a website design system. It includes
-          a color pallet, a list of fonts, a section on styles.
-        </p>
-      </header>
       <main>
-        <!--First section color selector buttons-->
+        <h1 id="mainHeading">Design System</h1>
+        <p id="titleCaption">
+          The following is a reference for a website design system. It includes
+          a color pallet, a list of fonts and section on styles.
+        </p>
+        <!--SECTION ONE: Color Pallet -->
         <h2>Color Pallet</h2>
         <section class="colorSection">
           <div class="colorBox colorBoxOne">English Lavender</div>
@@ -29,31 +27,58 @@
           <div class="colorBox colorBoxThree">Blue Violet</div>
           <div class="colorBox colorBoxFour">Russian Violet</div>
         </section>
-        <!--Second section imported fonts and the different weights-->
+        <!--SECTION TWO: Fonts and weight-->
+        <hr />
         <h2>Font Selection</h2>
         <section class="fontSection">
-          <div class="fontBox fontOne">
+          <div class="fontOne fontBox">
             <p class="heebo">Heebo</p>
-            <p id="heeboLight">this is Heebo light</p>
-            <p id="heeboMedium">this is Heebo medium</p>
-            <p id="heeboBold">this is Heebo bold</p>
+            <p id="heeboLight">This is Heebo light</p>
+            <p id="heeboMedium">This is Heebo medium</p>
+            <p id="heeboBold">This is Heebo bold</p>
           </div>
-          <div class="fontBox fontTwo">
+          <div class="fontTwo fontBox">
             <p class="workSans">Work Sans</p>
-            <p id="workSansLight">this is Work Sans light</p>
-            <p id="workSansMedium">this is Work Sans medium</p>
-            <p id="workSansBold">this is Work Sans bold</p>
+            <p id="workSansLight">This is Work Sans light</p>
+            <p id="workSansMedium">This is Work Sans medium</p>
+            <p id="workSansBold">This is Work Sans bold</p>
           </div>
-          <div class="fontBox fontThree">
+          <div class="fontThree fontBox">
             <p class="shadowsIntoLight">Shadows Into Light</p>
             <p id="shadowsIntoLightLight">
-              this is Shadows Into Light light lmao
+              This is Shadows Into Light light lmao
             </p>
             <p id="shadowsIntoLightMedium">
-              this is Shadows Into Light light lmao
+              This is Shadows Into Light light lmao
             </p>
             <p id="shadowsIntoLightBold">
-              this is Shadows Into Light light lmao
+              This is Shadows Into Light light lmao
+            </p>
+          </div>
+        </section>
+        <!--SECTION THREE: Heading styling -->
+        <hr />
+        <h2>Text Styling</h2>
+        <section class="stylingSection">
+          <div class="headingOne">
+            <h1>Heading 1</h1>
+            <p>
+              font-family: "Shadows Into Light"; font-style: normal;
+              font-weight: 700; font-size: 40px;
+            </p>
+          </div>
+          <div class="headingTwo">
+            <h2>Heading 2</h2>
+            <p>
+              font-family: "Work Sans"; font-style: normal; font-weight: 500;
+              font-size: 40px;
+            </p>
+          </div>
+          <div class="paragraph">
+            <p>paragraph</p>
+            <p>
+              font-family: "Work Sans"; font-style: normal; font-weight: 400;
+              font-size: default;
             </p>
           </div>
         </section>

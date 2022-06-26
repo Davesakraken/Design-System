@@ -1,54 +1,39 @@
+@keyframes color {
+  0% {
+    background: #61b3d4;
+  }
+  20% {
+    background: #6189d4;
+  }
+  40% {
+    background: #6172d4;
+  }
+  60% {
+    background: #8c5ed6;
+  }
+  80% {
+    background: #a370dd;
+  }
+  100% {
+    background: #61b3d4;
+  }
+}
+
 body {
-  background: linear-gradient(224deg, #9290e6, #70348c);
-  background-size: 400% 400%;
-
-  -webkit-animation: AnimationName 30s ease infinite;
-  -moz-animation: AnimationName 30s ease infinite;
-  -o-animation: AnimationName 30s ease infinite;
-  animation: AnimationName 30s ease infinite;
+  background: #e2e2e2; /* Fallback */
+  animation: color 30s infinite linear;
 }
 
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 97% 0%;
+/*Title Fade Animation*/
+
+@keyframes titleFadeIn {
+  from {
+    opacity: 0%;
+    transform: translateY(-10%);
   }
-  50% {
-    background-position: 4% 100%;
-  }
-  100% {
-    background-position: 97% 0%;
-  }
-}
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 97% 0%;
-  }
-  50% {
-    background-position: 4% 100%;
-  }
-  100% {
-    background-position: 97% 0%;
-  }
-}
-@-o-keyframes AnimationName {
-  0% {
-    background-position: 97% 0%;
-  }
-  50% {
-    background-position: 4% 100%;
-  }
-  100% {
-    background-position: 97% 0%;
-  }
-}
-@keyframes AnimationName {
-  0% {
-    background-position: 97% 0%;
-  }
-  50% {
-    background-position: 4% 100%;
-  }
-  100% {
-    background-position: 97% 0%;
+
+  to {
+    opacity: 100%;
+    transform: translateY(0%);
   }
 }
