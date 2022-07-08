@@ -21,7 +21,7 @@
 
 body {
   background: #e2e2e2; /* Fallback */
-  animation: color 30s infinite linear;
+  animation: color 15s infinite linear;
 }
 
 /*Title Fade Animation*/
